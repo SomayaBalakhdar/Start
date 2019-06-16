@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BeauyShop"
+             x:Class="BeauyShop.MainPage"
+             Title=" LogIn Page"
+              NavigationPage.HasNavigationBar="False"
+             >
+
+    <StackLayout>
+        
+            <Label Text="Welcome to the Beauty shop" 
+               FontAttributes="Bold"
+               FontSize="Large"
+               TextColor="Black"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                  />
+            <Image Source="BeautyCenter.jpg" />
+        <Label x:Name="User_Name" Text="Name" TextColor="MediumVioletRed" FontSize="20" FontAttributes="Bold" Margin="10"/>
+        <Entry x:Name="Name_Entry" Placeholder="Please Enter your name.."/>
+        <Label x:Name="User_Password" Text="Password" TextColor="MediumVioletRed" FontSize="20" FontAttributes="Bold" Margin="10"/>
+        <Entry x:Name="Password_Entry" Placeholder="Please Enter your password.." IsPassword="True"/>
+        <Button x:Name="BtnLogin" Text="Login" BorderColor="Black" BackgroundColor="LightSkyBlue" HorizontalOptions="CenterAndExpand" 
+                  VerticalOptions="CenterAndExpand" Clicked="BtnLogin_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
+
+   

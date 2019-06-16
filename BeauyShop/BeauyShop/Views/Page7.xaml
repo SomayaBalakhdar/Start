@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeauyShop.Views.Page7">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="Product_Name" Text="VOTIVE CANDLE SET" TextColor="MediumVioletRed" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" />
+            <Image x:Name="image" Source="CANDLE.jpg" WidthRequest="400" HeightRequest="300"/>
+            <StackLayout>
+
+                <Label x:Name="Price" Text="$18.00" FontSize="Small" HorizontalOptions="CenterAndExpand" TextColor="Green"/>
+                <Label x:Name="description" 
+                   Text=" Fills your home with crisp, just-cut forest fragrance that evokes seasonal celebrations, holidays and the winter solstice."
+                     FontSize="Medium" TextColor="Gray" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="10"/>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0, 60,20, 0">
+                    <ImageButton Source="Call_icon.png" WidthRequest="40" HeightRequest="40"  Clicked="ImageButton_Clicked" />
+                    <ImageButton Source="email.png"  WidthRequest="40" HeightRequest="40" Clicked="emailButton_Clicked">
+
+                    </ImageButton>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

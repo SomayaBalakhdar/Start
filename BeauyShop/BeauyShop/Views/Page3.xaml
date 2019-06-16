@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeauyShop.Views.Page3">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label x:Name="Product_Name" Text="Body Wash" TextColor="MediumVioletRed" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large" />
+            <Image x:Name="image" Source="BodyWash.jpg" WidthRequest="400" HeightRequest="300"/>
+            <StackLayout>
+
+                <Label x:Name="Price" Text="$21.00" FontSize="Small" HorizontalOptions="CenterAndExpand" TextColor="Green"/>
+                <Label x:Name="description" 
+                   Text="Delicate, dewy and floral, the Goldleaf Gardenia body wash gently cleanses and moisturizes skin with glycerin, jojoba oil and honey. Modern, feminine and floral"
+                     FontSize="Medium" TextColor="Gray" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="10"/>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0, 60,20, 0">
+                    <ImageButton Source="Call_icon.png" WidthRequest="40" HeightRequest="40"  Clicked="ImageButton_Clicked" />
+                    <ImageButton Source="email.png"  WidthRequest="40" HeightRequest="40" Clicked="emailButton_Clicked">
+
+                    </ImageButton>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

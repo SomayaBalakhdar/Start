@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BeauyShop.Views.HomePageView"
+             Title="Home Page"  >
+    <ContentPage.Content>
+        <ListView x:Name="itemList" ItemsSource="{Binding itemList}" HasUnevenRows="True" ItemTapped="OnItemSelected" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10" RowSpacing="60" ColumnSpacing="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="Product_image"  HeightRequest="150" WidthRequest="150" HorizontalOptions="CenterAndExpand" 
+                                   VerticalOptions="CenterAndExpand" Aspect="AspectFill"  Source="{Binding image}"/>
+                            <StackLayout Spacing="10" Padding="10" Grid.Column="1">
+                                <Label x:Name="Product_Name"   FontAttributes="Bold" FontSize="Medium" TextColor="Black" Text="{Binding name}" />
+                                <Label x:Name="Product_Price"  TextColor="Green" Text="{Binding price}"/>
+                                <Button x:Name="Cart_Button" BackgroundColor ="LightSkyBlue" MinimumWidthRequest="1"
+                                         Text="{Binding button}" />
+                            </StackLayout>
+                        </Grid>
+
+                    </ViewCell>
+                      
+                </DataTemplate>
+                </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+
+</ContentPage>
+
